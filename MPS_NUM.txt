@@ -1,0 +1,7 @@
+1.The functionality implemented by local_D.py is as follows: using QR decomposition to generate a series of random unitary matrices and projecting and reshaping them as a tensor pool. Then, randomly select a set of tensors from the tensor pool and concatenate them into a random periodic structure MPS, and then perform measurements using either a global operator or a local operator.  The implementation of the tensor contraction part uses the quimb computing package. After normalization, the measurement values are obtained. The process of generating MPS is repeated to obtain raw measurement data files. The general format of the data files is: filename = f"../local_D/vary_D_results_local_haar_unitary_L{L}D{D}.npz". 
+
+The experimental conditions we give here are to calculate the expectation value of the local observable under different large-D. Other experiments can be obtained by simply modifying the corresponding code.
+
+
+2.The file haar_moment_theoretical.py exports data of the 2nd-order moment and 4th-order moment corresponding to theoretical calculation parameters, including two files: filename_k4=f"haar_moment2/haar_local_L_D_k4" and filename_k2=f"haar_moment2/haar_local_L_D_k2"
+
